@@ -8,26 +8,64 @@
 
 import UIKit
 import CoreData
+import ESTabBarController_swift
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let vc = ViewController.init();
-        let naVC = UINavigationController.init(rootViewController: vc)
+//        let vc = ViewController.init();
+//        let naVC = UINavigationController.init(rootViewController: vc)
+//
+        let tab = self.customIrregularityStyle();
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.rootViewController = naVC
+        window?.rootViewController = tab
+        
 
         window?.makeKeyAndVisible();
         
         return true
     }
-
+    
+    func customIrregularityStyle() -> ESTabBarController {
+        let tabBar = ESTabBarController()
+        tabBar.delegate = self
+        tabBar.title = "Mr.cao"
+        tabBar.tabBar.shadowImage = UIImage(named: "transparent")
+        
+        let v1 = FMHomeViewController();
+        let v2 = FMListenController()
+        let v3 = FMPlayController()
+        let v4 = FMFindController()
+        let v5 = FMMineController()
+        
+        v1.tabBarItem = ESTabBarItem.init(YYIrregularityBasicContentView(), title: "home", image: UIImage(named: "home"), selectedImage: UIImage(named: ""))
+        v2.tabBarItem = ESTabBarItem.init(YYIrregularityBasicContentView(), title: "我听", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
+        v3.tabBarItem = ESTabBarItem.init(YYIrregularityContentView(), title: nil, image: UIImage(named: "tab_play"), selectedImage: UIImage(named: "tab_play"))
+        v4.tabBarItem = ESTabBarItem.init(YYIrregularityBasicContentView(), title: "发现", image: UIImage(named: "favor"), selectedImage: UIImage(named: "favor_1"))
+        v5.tabBarItem = ESTabBarItem.init(YYIrregularityBasicContentView(), title: "我的", image: UIImage(named: "me"), selectedImage: UIImage(named: "me_1"))
+        
+        let n1 = YYNavigationController.init(rootViewController: v1)
+        let n2 = YYNavigationController.init(rootViewController: v2)
+        let n3 = YYNavigationController.init(rootViewController: v3)
+        let n4 = YYNavigationController.init(rootViewController: v4)
+        let n5 = YYNavigationController.init(rootViewController: v5)
+        v1.title = "首页"
+        v2.title = "我听"
+        v3.title = "播放"
+        v4.title = "发现"
+        v5.title = "我的"
+        
+        tabBar.viewControllers = [n1, n2, n3, n4, n5]
+        
+        return tabBar;
+        
+    }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
