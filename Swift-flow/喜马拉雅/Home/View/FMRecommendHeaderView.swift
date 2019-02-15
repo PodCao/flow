@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 typealias HeaderMoreBtnClick = () -> Void
 
@@ -36,8 +37,56 @@ class FMRecommendHeaderView: UICollectionReusableView {
         btn.addTarget(self, action: #selector(moreBtnAction(btn:)), for: UIControlEvents.touchUpInside)
         return btn
     }()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUPUI()
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    func setUPUI() {
+        self.addSubview(self.titleLab)
+        self.titleLab.text = "猜你喜欢"
+        self.titleLab.snp.makeConstraints { (m) in
+            m.left.top.equalTo(15)
+            m.width.equalTo(150)
+            m.height.equalTo(30)
+        }
+        
+        self.addSubview(self.subLab)
+        self.subLab.snp.makeConstraints { (make) in
+            make.right.equalTo(15)
+            make.height.top.equalTo(self.titleLab)
+            make.right.equalToSuperview().offset(-100)
+        }
+        
+        self.addSubview(self.moreBtn)
+        self.moreBtn.snp.makeConstraints { (make) in
+            make.right.equalTo(15)
+            make.top.equalTo(15)
+            make.width.equalTo(100)
+            make.height.equalTo(30)
+        }
+    }
+    
+    var homeRecommendList: HomeRecommendModel? {
+        didSet{
+            guard let model = homeRecommendList else {
+                return
+            }
+            if model.title != nil {
+                titleLab.text = model.title
+            }else{
+                titleLab.text = "猜你喜欢"
+            }
+        }
+    }
+    
     
     @objc func moreBtnAction(btn: UIButton){
-        
+        guard let headerMoreBtnClick = headerMoreBtnClick else {
+            return
+        }
+        headerMoreBtnClick()
     }
 }

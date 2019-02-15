@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		CEED7EDD25A682E8C4914CA1 /* Pods_Swift_flow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15513CE372D5E5502920C848 /* Pods_Swift_flow.framework */; };
+		D10117CE221540F50049097D /* FMRecommendHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10117CD221540F50049097D /* FMRecommendHeaderCell.swift */; };
+		D10117DA221541580049097D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D10117D0221541580049097D /* LICENSE */; };
+		D10117DB221541580049097D /* README-OBJECTIVE-C.md in Resources */ = {isa = PBXBuildFile; fileRef = D10117D1221541580049097D /* README-OBJECTIVE-C.md */; };
+		D10117DC221541580049097D /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10117D3221541580049097D /* FSPagerView.swift */; };
+		D10117DD221541580049097D /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10117D4221541580049097D /* FSPageViewTransformer.swift */; };
+		D10117DE221541580049097D /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10117D5221541580049097D /* FSPagerViewCell.swift */; };
+		D10117DF221541580049097D /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10117D6221541580049097D /* FSPagerViewLayoutAttributes.swift */; };
+		D10117E0221541580049097D /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10117D7221541580049097D /* FSPageViewLayout.swift */; };
+		D10117E1221541580049097D /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10117D8221541580049097D /* FSPageControl.swift */; };
+		D10117E2221541580049097D /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10117D9221541580049097D /* FSPagerCollectionView.swift */; };
 		E11B6C782212B3BC0002FB76 /* Transparent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E11B6C772212B3BC0002FB76 /* Transparent@2x.png */; };
 		E11B6C7C2212B4070002FB76 /* FMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11B6C7B2212B4070002FB76 /* FMHomeViewController.swift */; };
 		E11B6C7E2212B6BE0002FB76 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11B6C7D2212B6BE0002FB76 /* Const.swift */; };
@@ -70,6 +80,16 @@
 		15513CE372D5E5502920C848 /* Pods_Swift_flow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_flow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B757FEA6C8CC517D16D3A89 /* Pods-Swift-flow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-flow.debug.xcconfig"; path = "Target Support Files/Pods-Swift-flow/Pods-Swift-flow.debug.xcconfig"; sourceTree = "<group>"; };
 		AA769C7E3E5C066AC0FA0D49 /* Pods-Swift-flow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-flow.release.xcconfig"; path = "Target Support Files/Pods-Swift-flow/Pods-Swift-flow.release.xcconfig"; sourceTree = "<group>"; };
+		D10117CD221540F50049097D /* FMRecommendHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMRecommendHeaderCell.swift; sourceTree = "<group>"; };
+		D10117D0221541580049097D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D10117D1221541580049097D /* README-OBJECTIVE-C.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "README-OBJECTIVE-C.md"; sourceTree = "<group>"; };
+		D10117D3221541580049097D /* FSPagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerView.swift; sourceTree = "<group>"; };
+		D10117D4221541580049097D /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewTransformer.swift; sourceTree = "<group>"; };
+		D10117D5221541580049097D /* FSPagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewCell.swift; sourceTree = "<group>"; };
+		D10117D6221541580049097D /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		D10117D7221541580049097D /* FSPageViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewLayout.swift; sourceTree = "<group>"; };
+		D10117D8221541580049097D /* FSPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageControl.swift; sourceTree = "<group>"; };
+		D10117D9221541580049097D /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerCollectionView.swift; sourceTree = "<group>"; };
 		E11B6C772212B3BC0002FB76 /* Transparent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Transparent@2x.png"; sourceTree = "<group>"; };
 		E11B6C7B2212B4070002FB76 /* FMHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeViewController.swift; sourceTree = "<group>"; };
 		E11B6C7D2212B6BE0002FB76 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -160,6 +180,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D10117CF221541580049097D /* FSPagerView */ = {
+			isa = PBXGroup;
+			children = (
+				D10117D0221541580049097D /* LICENSE */,
+				D10117D1221541580049097D /* README-OBJECTIVE-C.md */,
+				D10117D2221541580049097D /* Sources */,
+			);
+			path = FSPagerView;
+			sourceTree = "<group>";
+		};
+		D10117D2221541580049097D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D10117D3221541580049097D /* FSPagerView.swift */,
+				D10117D4221541580049097D /* FSPageViewTransformer.swift */,
+				D10117D5221541580049097D /* FSPagerViewCell.swift */,
+				D10117D6221541580049097D /* FSPagerViewLayoutAttributes.swift */,
+				D10117D7221541580049097D /* FSPageViewLayout.swift */,
+				D10117D8221541580049097D /* FSPageControl.swift */,
+				D10117D9221541580049097D /* FSPagerCollectionView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		E11B6C762212B3BC0002FB76 /* resourse */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +260,7 @@
 		E11B6C882212C5080002FB76 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				D10117CF221541580049097D /* FSPagerView */,
 				E11B6C892212C5080002FB76 /* WRNavigationBar */,
 			);
 			path = Lib;
@@ -345,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				E1EB179022141DF80061C9A3 /* FMRecommendHeaderView.swift */,
+				D10117CD221540F50049097D /* FMRecommendHeaderCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -460,6 +506,8 @@
 				E11B6CA62212CBFC0002FB76 /* find@2x.png in Resources */,
 				E1761BEB22112CD000F812BA /* LaunchScreen.storyboard in Resources */,
 				E1B5059522115C5300E552BB /* NextViewController.xib in Resources */,
+				D10117DA221541580049097D /* LICENSE in Resources */,
+				D10117DB221541580049097D /* README-OBJECTIVE-C.md in Resources */,
 				E11B6CA42212CBF10002FB76 /* tab_play@2x.png in Resources */,
 				E1761BE822112CD000F812BA /* Assets.xcassets in Resources */,
 				E1761BE322112CD000F812BA /* Main.storyboard in Resources */,
@@ -565,14 +613,21 @@
 				E11B6CB42212D21F0002FB76 /* HomeBroadcastController.swift in Sources */,
 				E11B6CA02212C78B0002FB76 /* FMPlayController.swift in Sources */,
 				E1761BE022112CD000F812BA /* ViewController.swift in Sources */,
+				D10117E1221541580049097D /* FSPageControl.swift in Sources */,
 				E11B6C7C2212B4070002FB76 /* FMHomeViewController.swift in Sources */,
 				E11B6C902212C5080002FB76 /* WRNavigationBar.swift in Sources */,
 				E1B5059422115C5300E552BB /* NextViewController.swift in Sources */,
 				E11B6C942212C5080002FB76 /* WRCycleCell.swift in Sources */,
 				E11B6CB02212D1FC0002FB76 /* HomeVIPController.swift in Sources */,
+				D10117CE221540F50049097D /* FMRecommendHeaderCell.swift in Sources */,
 				E11B6C812212BABD0002FB76 /* YYBasicContentView.swift in Sources */,
 				E11B6C852212C0AB0002FB76 /* YYIrregularityBasicContentView.swift in Sources */,
 				E1EB179122141DF80061C9A3 /* FMRecommendHeaderView.swift in Sources */,
+				D10117E0221541580049097D /* FSPageViewLayout.swift in Sources */,
+				D10117DF221541580049097D /* FSPagerViewLayoutAttributes.swift in Sources */,
+				D10117DE221541580049097D /* FSPagerViewCell.swift in Sources */,
+				D10117DD221541580049097D /* FSPageViewTransformer.swift in Sources */,
+				D10117E2221541580049097D /* FSPagerCollectionView.swift in Sources */,
 				E11B6C832212BB620002FB76 /* YYBouncesContentView.swift in Sources */,
 				E11B6C932212C5080002FB76 /* WRCycleScrollView.swift in Sources */,
 				E11B6CAE2212D0450002FB76 /* HomeRecommendController.swift in Sources */,
@@ -581,6 +636,7 @@
 				E1EB178E2213F8CC0061C9A3 /* HomeRecommendModel.swift in Sources */,
 				E11B6CB22212D20F0002FB76 /* HomeLiveController.swift in Sources */,
 				E11B6C9C2212C7540002FB76 /* FMListenController.swift in Sources */,
+				D10117DC221541580049097D /* FSPagerView.swift in Sources */,
 				E1761BDE22112CD000F812BA /* AppDelegate.swift in Sources */,
 				E11B6CAC2212D00A0002FB76 /* HomeBaseViewController.swift in Sources */,
 				E11B6C922212C5080002FB76 /* WRProxy.swift in Sources */,

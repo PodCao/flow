@@ -33,16 +33,16 @@ class HomeRecommendController: HomeBaseViewController {
      ssss
      */
     
-//    lazy var collection:UICollectionView {
-//        let layout = UICollectionViewFlowLayout.init()
-//        let collection = UICollectionView.init(frame: .zero, collectionViewLayout: layout)
-////        collection.delegate = self;
-////        collection.dataSource = self;
-//        collection.backgroundColor = .white
-////        collection.register(<#T##viewClass: AnyClass?##AnyClass?#>, forSupplementaryViewOfKind: <#T##String#>, withReuseIdentifier: <#T##String#>)
-//        
-//        
-//    }
+    lazy var collection:UICollectionView {
+        let layout = UICollectionViewFlowLayout.init()
+        let collection = UICollectionView.init(frame: .zero, collectionViewLayout: layout)
+        collection.delegate = self;
+        collection.dataSource = self;
+        collection.backgroundColor = .white
+        collection.register(FMRecommendHeaderView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: FMRecommendHeaderViewID)
+        
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.view.backgroundColor = .green;
